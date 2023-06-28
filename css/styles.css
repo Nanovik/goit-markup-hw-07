@@ -195,7 +195,7 @@ img {
             visibility 250ms var(--timing-function);
     }
 
-    .mob-menu.data-menu-open {
+    .mob-menu.is-open {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -660,13 +660,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
 /**-------------- IMG------------------ */
 
-@media screen and (max-width: 1157px) {
+@media screen and (max-width: 1158px) {
     .doing {
         display: none;
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1157px) {
     .doing {
         padding-bottom: 120px;
     }
