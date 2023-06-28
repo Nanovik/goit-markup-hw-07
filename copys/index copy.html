@@ -15,31 +15,22 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
 
     <header class="header">
         <div class="container header-container">
-            <nav class="header-container-nav">
+            <nav class="header-container">
                 <a href="./index.html" class="header-logo link">
                     Web<span class="header-logo-last">Studio</span>
                 </a>
-
-                <button type="button" class="menu-btn">
-                    <svg class="js-open-menu" width="32" height="22" aria-label="Menu open">
-                        <use class="icon-menu" href="./images/icons.svg#icon-menu-hamburger"></use>
-                    </svg>
-                </button>
-
                 <ul class="list header-list">
                     <li><a href="./index.html" class="link header-list-item current">Studio</a></li>
                     <li><a href="./portfolio.html" class="link header-list-item">Portfolio</a></li>
                     <li><a href="" class="header-list-item link ">Contacts</a></li>
                 </ul>
             </nav>
-
             <address class="header-address">
                 <ul class="list header-address-list">
                     <li><a href="mailto:info@devstudio.com" class="header-address link">info@devstudio.com</a></li>
@@ -47,68 +38,11 @@
                 </ul>
             </address>
         </div>
-
-        <div class="mob-menu js-menu-container">
-            <div class="">
-                <button type="button" class="mob-menu-btn js-close-menu">
-                    <svg class="" width="8" height="8">
-                        <use class="icon-close" href="./images/icons.svg#icon-close-btn"></use>
-                    </svg>
-                </button>
-                <ul class="list mob-menu-list">
-                    <li class="item"><a href="./index.html" class="link mob-menu-list-item current">Studio</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link mob-menu-list-item">Portfolio</a></li>
-                    <li class="item"><a href="" class="mob-menu-list-item link ">Contacts</a></li>
-                </ul>
-            </div>
-            
-            <div class="">
-                <address class="mob-menu-address">
-                    <ul class="list mob-menu-address-list">
-                        <li class="item"><a href="tel:+110001111111" class="mob-menu-tel link">+11 (000) 111-11-11</a></li>
-                        <li class="item"><a href="mailto:info@devstudio.com" class="mob-menu-email link">info@devstudio.com</a>
-                        </li>
-                    </ul>
-                </address>
-        
-                <ul class="mob-soc-list list">
-                    <li class="team-soc-item">
-                        <a href="" class="mob-soc-link link" target="_blank" rel="noopener noreferrer">
-                            <svg class="mob-soc-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mob-soc-item">
-                        <a href="" class="mob-soc-link link" target="_blank" rel="noopener noreferrer">
-                            <svg class="mob-soc-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mob-soc-item">
-                        <a href="" class="mob-soc-link link" target="_blank" rel="noopener noreferrer">
-                            <svg class="mob-soc-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="mob-soc-item">
-                        <a href="" class="mob-soc-link link" target="_blank" rel="noopener noreferrer">
-                            <svg class="mob-soc-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
     </header>
 
     <main>
-        <section class="container hero">
-            <div class="container">
+        <section class="hero hero-wrap">
+            <div class="container hero-container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button type="button" class="hero-bottom-text" data-modal-open>Order Service</button>
             </div>
@@ -177,52 +111,13 @@
                 <h2 class="img-head">What are we doing</h2>
                 <ul class="link list img-list">
                     <li class="item">
-                        <!-- <img src="./images/1-min.jpg" alt="Desktop" width="360" height="300" /> -->
-                        <picture>
-                            <source srcset="
-                                            ./images/doing/img-1.webp    1x,
-                                            ./images/doing/img-1@2x.webp 2x
-                                            " media="(min-width: 1158px)" type="image/webp" />
-                        
-                            <source srcset="
-                                            ./images/doing/img-1.jpg    1x,
-                                            ./images/doing/img-1@2x.jpg 2x
-                                            " media="(min-width: 1158px)" />
-                        
-                            <img src="./images/doing/img-1.jpg" alt="Desktop" width="360" height="300" />
-                        </picture>
+                        <img src="./images/1-min.jpg" alt="Desktop" width="360" height="300" />
                     </li>
                     <li class="item">
-                        <!-- <img src="./images/2-min.jpg" alt="App for Mobile" width="360" height="300" /> -->
-                        <picture>
-                            <source srcset="
-                                            ./images/doing/img-2.webp    1x,
-                                            ./images/doing/img-2@2x.webp 2x
-                                            " media="(min-width: 1158px)" type="image/webp" />
-                        
-                            <source srcset="
-                                            ./images/doing/img-2.jpg    1x,
-                                            ./images/doing/img-2@2x.jpg 2x
-                                            " media="(min-width: 1158px)" />
-                        
-                            <img src="./images/doing/img-2.jpg" alt="App for Mobile" width="360" height="300" />
-                        </picture>
+                        <img src="./images/2-min.jpg" alt="App for Mobile" width="360" height="300" />
                     </li>
                     <li class="item">
-                        <!-- <img src="./images/3-min.jpg" alt="Laptop" width="360" height="300" /> -->
-                        <picture>
-                            <source srcset="
-                                            ./images/doing/img-3.webp    1x,
-                                            ./images/doing/img-3@2x.webp 2x
-                                            " media="(min-width: 1158px)" type="image/webp" />
-                        
-                            <source srcset="
-                                            ./images/doing/img-3.jpg    1x,
-                                            ./images/doing/img-3@2x.jpg 2x
-                                            " media="(min-width: 1158px)" />
-                        
-                            <img src="./images/doing/img-3.jpg" alt="Laptop" width="360" height="300" />
-                        </picture>
+                        <img src="./images/3-min.jpg" alt="Laptop" width="360" height="300" />
                     </li>
                 </ul>
             </div>
@@ -234,18 +129,7 @@
 
                 <ul class="list team-list">
                     <li class="team-list-item">
-                        <picture>
-                            <source srcset="
-                                ./images/team/people-1.webp    1x,
-                                ./images/team/people-1@2x.webp 2x
-                            " type="image/webp" />
-
-                            <source srcset="
-                                ./images/team/people-1.jpg    1x,
-                                ./images/team/people-1@2x.jpg 2x
-                            " />
-                            <img src="./images/team/people-1.jpg" alt="Mark Guerrero" width="264" height="260" class="person-image" />
-                        </picture>
+                        <img src="./images/4-min.jpg" alt="Mark Guerrero" width="264" height="260" />
                         <div class="team-list-name">
                             <h3 class="team-h">Mark Guerrero</h3>
                             <p class="team-p">Product Designer</p>
@@ -282,18 +166,7 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <picture>
-                            <source srcset="
-                                            ./images/team/people-2.webp    1x,
-                                            ./images/team/people-2@2x.webp 2x
-                                        " type="image/webp" />
-                        
-                            <source srcset="
-                                            ./images/team/people-2.jpg    1x,
-                                            ./images/team/people-2@2x.jpg 2x
-                                        " />
-                            <img src="./images/team/people-2.jpg" alt="Tom Ford" width="264" height="260" class="person-image" />
-                        </picture>
+                        <img src="./images/5-min.jpg" alt="Tom Ford" width="264" height="260" />
                         <div class="team-list-name">
                             <h3 class="team-h">Tom Ford</h3>
                             <p class="team-p">Frontend Developer</p>
@@ -330,18 +203,7 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <picture>
-                            <source srcset="
-                                ./images/team/people-3.webp    1x,
-                                ./images/team/people-3@2x.webp 2x
-                            " type="image/webp" />
-                        
-                            <source srcset="
-                                ./images/team/people-3.jpg    1x,
-                                ./images/team/people-3@2x.jpg 2x
-                            " />
-                            <img src="./images/team/people-3.jpg" alt="Camila Garcia" width="264" height="260" class="person-image" />
-                        </picture>
+                        <img src="./images/6-min.jpg" alt="Camila Garcia" width="264" height="260" />
                         <div class="team-list-name">
                             <h3 class="team-h">Camila Garcia</h3>
                             <p class="team-p">Marketing</p>
@@ -378,18 +240,7 @@
                         </div>
                     </li>
                     <li class="team-list-item">
-                        <picture>
-                            <source srcset="
-                                ./images/team/people-4.webp    1x,
-                                ./images/team/people-4@2x.webp 2x
-                            " type="image/webp" />
-                        
-                            <source srcset="
-                                ./images/team/people-4.jpg    1x,
-                                ./images/team/people-4@2x.jpg 2x
-                            " />
-                            <img src="./images/team/people-4.jpg" alt="Daniel Wilson" width="264" height="260" class="person-image" />
-                        </picture>
+                        <img src="./images/7-min.jpg" alt="Daniel Wilson" width="264" height="260" />
                         <div class="team-list-name">
                             <h3 class="team-h">Daniel Wilson</h3>
                             <p class="team-p">UI Designer</p>
@@ -534,7 +385,7 @@
             <div class="container footer-subscribe">
                 <p class="footer-sub-h">Subscribe</p>
                 <form class="footer-form-subscribe">
-                    <label class="footer-sub-h">
+                    <label class="footer-h">
                         <input class="footer-eml-box" type="email" name="email" placeholder="E-mail">
                     </label>
                     <button class="footer-sub-btn" type="submit">
@@ -628,7 +479,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
