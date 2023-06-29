@@ -179,12 +179,10 @@ img {
         height: 100vh;
         background-color: var(--bg-color);
         padding: 24px 24px 40px 40px;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow: auto;
-
-
 
         opacity: 0;
         visibility: hidden;
